@@ -1,0 +1,30 @@
+---
+import "../styles/global.css";
+import "../styles/reset.css";
+import camera from "../assets/camera.jpg";
+import { Image } from "astro:assets";
+---
+
+<Image src={camera} alt="Camera" class="camera" />
+
+<main>
+  <section class="text">
+    <h3 class="overskrift_h3">Analog Fotografering</h3>
+  </section>
+
+  <section class="text">
+    <p>
+      Fotografering med gode, gammeldags filmruller. Analog fotografering stiger for tiden i popularitet, specielt blandt unge, og prisen på filmruller og vintage-kameraer skyder i vejret. Mange fotografer synes af film-fotografering er mere ægte har
+      mere “sjæl.” Analog fotografering er langsommmere, hvert enkelt billede koster penge, og man bliver nødt til at overveje motiv og lys grundigere før der skydes - tænk før du trykker.
+    </p>
+  </section>
+</main>
+
+<style>
+  main {
+    background-color: var(--sand-1);
+    padding: 5%;
+    padding-left: 30%;
+    padding-right: 30%;
+  }
+</style>

@@ -1,0 +1,51 @@
+@import "https://unpkg.com/open-props";
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Just+Me+Again+Down+Here&family=Playfair+Display&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@300&family=Just+Me+Again+Down+Here&family=Playfair+Display&display=swap");
+
+/* * main {
+}
+*/
+
+/* typografi */
+.overskrift,
+h3 {
+  font-family: "Playfair Display", serif;
+}
+h2 {
+  font-family: "Just Me Again Down Here";
+}
+
+/* -------Font sizes------- */
+
+/* h1 */
+.overskrift {
+  font-size: var(--font-size-8);
+}
+
+/* h2 */
+.underskrift {
+  font-size: var(--font-size-6);
+}
+
+/* h3 */
+.overskrift_h3 {
+  font-size: var(--font-size-4);
+}
+/* ------------------ */
+
+/* alle p'er */
+p {
+  font-family: "Dosis";
+}
+
+/* mellemrum i afsnit */
+.text {
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+.citat {
+  font-family: "Just Me Again Down Here";
+  font-size: var(--font-size-4);
+}

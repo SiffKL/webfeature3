@@ -1,0 +1,76 @@
+---
+import { Image } from "astro:assets";
+import landingpage from "../assets/landingpage.jpg";
+import stock1 from "../assets/stock1.jpg";
+import stock2 from "../assets/stock2.jpg";
+import stock3 from "../assets/stock3.jpg";
+import stock4 from "../assets/stock4.jpg";
+import camera from "../assets/camera.jpg";
+import "../styles/global.css";
+import Forside from "../components/Forside.astro";
+import Intro from "../components/Intro.astro";
+import Stockfotos from "../components/Stockfotos.astro";
+import Pierresberommelse from "../components/Pierresberommelse.astro";
+import Enskillevej from "../components/Enskillevej.astro";
+import Video from "../components/Video.astro";
+import Ennybegyndelse from "../components/Ennybegyndelse.astro";
+import Analogfotografering from "../components/Analogfotografering.astro";
+import Galleri from "../components/Galleri.astro";
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Astro</title>
+  </head>
+  <body>
+    <Forside />
+    <Intro />
+    <Stockfotos />
+    <Pierresberommelse />
+    <Enskillevej />
+    <Video />
+    <Ennybegyndelse />
+    <Analogfotografering />
+    <Galleri />
+  </body>
+
+  <style>
+    .landingpagefoto {
+      width: 100%;
+      height: 100%;
+    }
+
+    .stock1 {
+      width: 20%;
+      height: 20%;
+    }
+
+    .stock2 {
+      width: 20%;
+      height: 20%;
+    }
+
+    .stock3 {
+      width: 20%;
+      height: 20%;
+    }
+
+    .stock4 {
+      width: 20%;
+      height: 20%;
+    }
+
+    @import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
+  </style>
+
+  <script>
+    import { gsap } from "gsap";
+    import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+    gsap.registerPlugin(ScrollTrigger);
+  </script>
+</html>
