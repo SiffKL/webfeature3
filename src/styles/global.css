@@ -33,6 +33,7 @@ h2 {
 /* h3 */
 .overskrift_h3 {
   font-size: var(--font-size-4);
+  color: #56150a;
 }
 /* ------------------ */
 
