@@ -1,17 +1,87 @@
 ---
+
 import "../styles/global.css";
+
 import "../styles/reset.css";
+
 ---
 
+ 
+
 <main>
-  <p class="citat">Det interessante ligger i fejlen. Et foto med masser af fejl er interessant. Jeg eksperimenterer med udstyr og teknik, og skaber nye visuelle udtryk. Det uperfekte er perfekt"</p>
+
+  <section class="video">
+
+  <video id="video" autoplay muted loop>
+
+    <source src="/eksperimentel-video.mp4" type="video/mp4" />
+
+  </video>
+
+  
+
+  <div class="text-overlay">
+
+  <p class="citat">"Det interessante ligger i fejlen. Et foto med masser af fejl er interessant. Jeg eksperimenterer med udstyr og teknik, og skaber nye visuelle udtryk. Det uperfekte er perfekt"</p>
+
+</section>
+
+ 
+
 </main>
 
+ 
+
+ 
+
+ 
+
 <style>
-  main {
-    height: 790px;
-    width: 100%;
-    background-image: url("../assets/landingpage.jpg");
-    background-size: cover;
+
+.text-overlay {
+
+  position: absolute;
+
+    text-align: center;
+
+    max-width: 100vw;
+
+    overflow-x: hidden;
+
+    z-index: 1;
+
   }
+
+ 
+
+.citat{
+
+    padding-left: 10%;
+
+    padding-right: 10%;
+
+  }
+
+  
+
+ 
+
+ 
+
+  #video {
+
+    width: 100vw;
+
+    height: 100vh;
+
+    object-fit: cover;
+
+    z-index: 0;
+
+  }
+
+ 
+
 </style>
+
+ 
