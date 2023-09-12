@@ -9,6 +9,7 @@
 
 /* typografi */
 .overskrift,
+.overskrift1,
 h3 {
   font-family: "Playfair Display", serif;
 }
@@ -19,7 +20,8 @@ h2 {
 /* -------Font sizes------- */
 
 /* h1 */
-.overskrift {
+.overskrift,
+.overskrift1 {
   font-size: var(--font-size-8);
 }
 

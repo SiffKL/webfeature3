@@ -4,7 +4,9 @@ import "../styles/reset.css";
 ---
 
 <main>
-  <h1 class="overskrift">Uperfekt er perfekt</h1>
+  
+  <h1 class="overskrift">Uperfekt </h1>
+  <h1 class="overskrift1">er perfekt</h1>
 
   <h2 class="underskrift">Pierre Falcke</h2>
 </main>
@@ -44,19 +46,38 @@ import "../styles/reset.css";
     background-size: cover;
   }
 
-  .overskrift {
-    top: 20;
+  
+    
+  .overskrift, .overskrift1{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    color: #56150A;
+    font-size: 8rem;
+    font-weight: 400;
   }
 
+  .overskrift1{
+    text-align: right;
+    margin-right: 20%;
+  }
+
+  .overskrift{
+    /* margin-top: 5rem; */
+    margin-left: 20%;
+    
+  }
   .underskrift {
-    height: 20vh;
-    margin-left: 50%; /* Flyt til høyre */
+    /* height: 20vh; */
+    margin-left: 35%; /* Flyt til høyre */
     display: flex;
     align-items: center;
     padding-left: 200px;
+    color: #D5D2CB;
+    font-size: 6rem;
+    transform: rotate(-10deg);
   }
+
+   @media screen (max-width: 600px);{
+    
+   }
 </style>
