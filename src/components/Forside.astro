@@ -4,6 +4,7 @@ import "../styles/reset.css";
 ---
 
 <main>
+  
   <h1 class="overskrift">Uperfekt </h1>
   <h1 class="overskrift1">er perfekt</h1>
 
@@ -45,17 +46,26 @@ import "../styles/reset.css";
     background-size: cover;
   }
 
+  
+    
   .overskrift, .overskrift1{
-    top: 20;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     color: #56150A;
     font-size: 8rem;
     font-weight: 400;
   }
 
+  .overskrift1{
+    text-align: right;
+    margin-right: 20%;
+  }
+
+  .overskrift{
+    /* margin-top: 5rem; */
+    margin-left: 20%;
+    
+  }
   .underskrift {
     /* height: 20vh; */
     margin-left: 35%; /* Flyt til høyre */
@@ -66,4 +76,8 @@ import "../styles/reset.css";
     font-size: 6rem;
     transform: rotate(-10deg);
   }
+
+   @media screen (max-width: 600px);{
+    
+   }
 </style>
