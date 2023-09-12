@@ -1,25 +1,33 @@
 ---
 import "../styles/global.css";
 import "../styles/reset.css";
-import stock1 from "../assets/stock1.jpg";
-import stock2 from "../assets/stock2.jpg";
-import stock3 from "../assets/stock3.jpg";
-import stock4 from "../assets/stock4.jpg";
+import stock1 from "../assets/stock_1.png";
+import stock2 from "../assets/stock_2.png";
+import stock3 from "../assets/stock_3.png";
+import stock4 from "../assets/stock_4.png";
 import { Image } from "astro:assets";
 ---
 
 <section class="image-container">
-  <div><Image src={stock1} format="webp" alt="stock" class="stock1" /></div>
-  <div><Image src={stock2} format="webp" alt="stock" class="stock2" /></div>
-  <div><Image src={stock3} format="webp" alt="stock" class="stock3" /></div>
-  <div><Image src={stock4} format="webp" alt="stock" class="stock4" /></div>
+  <div class="img"><Image src={stock1} format="webp" alt="stock" class="stock1" /></div>
+  <div class="img"><Image  src={stock2} format="webp" alt="stock" class="stock2" /></div>
+  <div class="img"><Image src={stock3} format="webp" alt="stock" class="stock3" /></div>
+  <div class="img"><Image  src={stock4} format="webp" alt="stock" class="stock4" /></div>
 </section>
 
 <style>
-  .img {
-    display: flex;
-    justify-content: space-between;
-    width: 300px;
-    height: auto;
-  }
+ .image-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+ }
+ 
+ .img {
+  filter: grayscale(100%);
+ }
+
+ .img:hover{
+  filter: grayscale(0%);
+ }
+
 </style>
