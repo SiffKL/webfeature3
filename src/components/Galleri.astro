@@ -1,4 +1,73 @@
 ---
 import "../styles/global.css";
 import "../styles/reset.css";
+import galleri1 from "../assets/galleri1.jpg";
+import galleri2 from "../assets/galleri2.jpg";
+import galleri3 from "../assets/galleri3.jpg";
+import galleri4 from "../assets/galleri4.jpg";
+import galleri5 from "../assets/galleri5.jpg";
+import galleri6 from "../assets/galleri6.jpg";
+import galleri8 from "../assets/galleri8.jpg";
+import galleri9 from "../assets/galleri9.jpg";
+import galleri10 from "../assets/galleri10.jpg";
+import { Image } from "astro:assets";
 ---
+
+<!-- <section class="image-container">
+  <div class="image-row">
+    <div><Image src={galleri1} format="webp" alt="galleri" class="galleri1" /></div>
+    <div><Image src={galleri2} format="webp" alt="galleri" class="galleri2" /></div>
+    <div><Image src={galleri3} format="webp" alt="galleri" class="galleri3" /></div>
+  </div>
+  <div class="image-row">
+    <div><Image src={galleri4} format="webp" alt="galleri" class="galleri4" /></div>
+    <div><Image src={galleri5} format="webp" alt="galleri" class="galleri5" /></div>
+    <div><Image src={galleri8} format="webp" alt="galleri" class="galleri8" /></div>
+  </div>
+  <div class="image-row">
+    <div><Image src={galleri6} format="webp" alt="galleri" class="galleri6" /></div>
+    <div><Image src={galleri9} format="webp" alt="galleri" class="galleri9" /></div>
+    <div><Image src={galleri10} format="webp" alt="galleri" class="galleri10" /></div>
+  </div>
+</section> -->
+<section class="image-container">
+  <div class="image-row">
+    <div><Image src={galleri1} format="webp" alt="galleri" class="galleri1" /></div>
+    <div><Image src={galleri4} format="webp" alt="galleri" class="galleri4" /></div>
+    <div><Image src={galleri6} format="webp" alt="galleri" class="galleri6" /></div>
+  </div>
+  <div class="image-row">
+    <div><Image src={galleri2} format="webp" alt="galleri" class="galleri2" /></div>
+    <div><Image src={galleri5} format="webp" alt="galleri" class="galleri5" /></div>
+    <div><Image src={galleri9} format="webp" alt="galleri" class="galleri9" /></div>
+  </div>
+  <div class="image-row">
+    <div><Image src={galleri3} format="webp" alt="galleri" class="galleri3" /></div>
+    <div><Image src={galleri8} format="webp" alt="galleri" class="galleri8" /></div>
+    <div><Image src={galleri10} format="webp" alt="galleri" class="galleri10" /></div>
+  </div>
+</section>
+
+<style>
+  .image-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    justify-items: center; /* Centrer indhold vandret */
+  }
+
+  .image-row {
+    display: grid; /* Skift til grid layout for rækker */
+    grid-template-columns: 1fr; /* Kun en kolonne pr. række */
+    margin: 1px 0;
+  }
+
+  .image-row div {
+    margin: 5%;
+  }
+
+  .image-row div Image {
+    width: 100%;
+    height: auto;
+  }
+</style>
