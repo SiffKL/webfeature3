@@ -10,32 +10,26 @@ import stock4 from "../assets/stock_4.png";
 
 <section class="image-container">
   <div class="img"><Image src={stock1} format="webp" alt="stock" class="stock1" /></div>
-  <div class="img"><Image  src={stock2} format="webp" alt="stock" class="stock2" /></div>
+  <div class="img"><Image src={stock2} format="webp" alt="stock" class="stock2" /></div>
   <div class="img"><Image src={stock3} format="webp" alt="stock" class="stock3" /></div>
-  <div class="img"><Image  src={stock4} format="webp" alt="stock" class="stock4" /></div>
+  <div class="img"><Image src={stock4} format="webp" alt="stock" class="stock4" /></div>
 </section>
 
 <style>
- .image-container{
-  display: flex;
-  
-  /* gap: 2rem; */
-  align-items: center;
-  max-width:max-content;
-  gap: 0.5rem;
+  .image-container {
+    display: flex;
+    justify-content: center;
+    /* gap: 2rem; */
+    align-items: center;
+    max-width: none;
+    gap: 0.5rem;
+  }
 
- 
- }
- 
- .img {
-  filter: grayscale(100%);
- }
+  .img {
+    filter: grayscale(100%);
+  }
 
- .img:hover{
-  filter: grayscale(0%);
- }
-
-
-
-
+  .img:hover {
+    filter: grayscale(0%);
+  }
 </style>
