@@ -32,6 +32,7 @@ import { Image } from "astro:assets";
 </section>
 
 <style>
+  /* DESKTOP */
   .image-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -55,5 +56,20 @@ import { Image } from "astro:assets";
   .image-row div Image {
     width: 100%;
     height: auto;
+  }
+
+  /* MOBILE */
+  @media screen and (max-width: 600px) {
+    .image-container {
+      margin: 0 auto;
+      max-width: 600px;
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .image-row {
+    /* Ændrer til en kolonne i stedet for tre kolonner */
+    display: grid;
+    grid-template-columns: 1fr;
   }
 </style>
