@@ -3,7 +3,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Just+Me+Again+Down+Here&family=Playfair+Display&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Dosis:wght@300&family=Just+Me+Again+Down+Here&family=Playfair+Display&display=swap");
 
-/* typografi */
+/* ------------------- typografi --------------------*/
 .overskrift,
 .overskrift1,
 h3 {
@@ -21,7 +21,7 @@ p {
   font-family: "Just Me Again Down Here";
 }
 
-/* -------Font sizes------- */
+/* --------------- Font sizes ------------------ */
 
 /* h1 */
 .overskrift,
@@ -36,21 +36,20 @@ p {
 
 /* h3 */
 .overskrift_h3 {
-  font-size: var(--font-size-4);
-  /* color: #56150a; */
+  font-size: var(--font-size-5);
 }
-h4 {
-  /* font-size: var(--font-size-5); */
 
-  /* color: #56150a; */
+/* h4 */
+h4 {
   text-align: center;
 }
 
+/* citater */
 .citat,
 .videocitat {
   font-size: var(--font-size-4);
 }
-/* --------- Color --------- */
+/* ------------------- Color ----------------- */
 
 p {
   color: #313131;
@@ -64,17 +63,33 @@ h4 {
   color: #fcfbfb;
 }
 
-/* ----------- mellemrum i afsnit --------- */
+body {
+  /* background-color: var(--sand-1); */
+  background-color: #fbfbfb;
+}
+
+/* ---------------- mellemrum i afsnit -------------- */
 .text {
   padding-bottom: 5%;
+  max-width: 650px;
 }
 
 h3 {
   padding: 5% 0% 5% 0%;
 }
 
-.textmain {
+.textmain,
+.intro {
   padding: 5%;
   padding-left: 30%;
   padding-right: 30%;
+}
+
+@media screen and (max-width: 600px) {
+  .textmain,
+  .intro {
+    padding: 5%;
+    padding-left: 8%;
+    padding-right: 8%;
+  }
 }
