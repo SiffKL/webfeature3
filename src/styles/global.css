@@ -3,10 +3,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Just+Me+Again+Down+Here&family=Playfair+Display&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Dosis:wght@300&family=Just+Me+Again+Down+Here&family=Playfair+Display&display=swap");
 
-/* * main {
-}
-*/
-
 /* typografi */
 .overskrift,
 .overskrift1,
@@ -15,6 +11,10 @@ h3 {
 }
 h2 {
   font-family: "Just Me Again Down Here";
+}
+h4,
+p {
+  font-family: "Dosis";
 }
 
 /* -------Font sizes------- */
@@ -35,20 +35,34 @@ h2 {
   font-size: var(--font-size-4);
   color: #56150a;
 }
-/* ------------------ */
+h4 {
+  /* font-size: var(--font-size-5); */
 
-/* alle p'er */
+  color: #56150a;
+  text-align: center;
+}
+/* --------- Color --------- */
+
 p {
-  font-family: "Dosis";
+  color: #313131;
 }
 
-/* mellemrum i afsnit */
+/* ----------- mellemrum i afsnit --------- */
 .text {
-  padding-top: 5%;
   padding-bottom: 5%;
 }
 
+h3 {
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
 .citat {
   font-family: "Just Me Again Down Here";
   font-size: var(--font-size-4);
+}
+
+.textmain {
+  padding: 5%;
+  padding-left: 30%;
+  padding-right: 30%;
 }
