@@ -14,7 +14,7 @@ import "../styles/reset.css";
 
   <video id="video" autoplay muted loop>
 
-    <source src="/eksperimentel-video.mp4" type="video/mp4" />
+    <source src="/eksperi-video.mp4" type="video/mp4" />
 
   </video>
 
@@ -37,6 +37,11 @@ import "../styles/reset.css";
  
 
 <style>
+  
+  .slide-in-blurred-bottom {
+	-webkit-animation: slide-in-blurred-bottom 0.6s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+	        animation: slide-in-blurred-bottom 0.6s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+}
 
 .text-overlay {
 
@@ -61,12 +66,6 @@ import "../styles/reset.css";
     padding-right: 10%;
 
   }
-
-  
-
- 
-
- 
 
   #video {
 
