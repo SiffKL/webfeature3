@@ -45,7 +45,7 @@ p {
 
 /* h4 */
 h4 {
-  text-align: center;
+  font-size: var(--font-size-5);
 }
 
 /* citater */
