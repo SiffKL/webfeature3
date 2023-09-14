@@ -39,7 +39,10 @@ p {
 }
 
 /* h3 */
-.overskrift_h3 {
+.overskrift_h3,
+.overskrifth3,
+.Overskrifth3,
+.overskriftEnskillevej {
   font-size: var(--font-size-5);
 }
 
@@ -59,6 +62,9 @@ p {
   color: #313131;
 }
 .overskrift_h3,
+.overskrifth3,
+.Overskrifth3,
+.overskriftEnskillevej,
 h4 {
   color: #56150a;
 }
