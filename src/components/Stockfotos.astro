@@ -19,7 +19,6 @@ import stock4 from "../assets/stock_4.png";
   .image-container {
     display: flex;
     justify-content: center;
-    /* gap: 2rem; */
     align-items: center;
     max-width: none;
     gap: 0.5rem;
@@ -31,5 +30,14 @@ import stock4 from "../assets/stock_4.png";
 
   .img:hover {
     filter: grayscale(0%);
+  }
+
+  /* MOBILE */
+  @media screen and (max-width: 600px) {
+    .stock1,
+    .stock2,
+    .stock4 {
+      display: none;
+    }
   }
 </style>
