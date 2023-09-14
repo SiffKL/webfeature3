@@ -17,31 +17,25 @@ import "../styles/reset.css";
     <source src="/eksperi-video.mp4" type="video/mp4" />
 
   </video>
-
+</section>
   
-
+<section class="citat_animation">
   <div class="text-overlay">
 
   <p class="videocitat">"Det interessante ligger i fejlen. Et foto med masser af fejl er interessant. Jeg eksperimenterer med udstyr og teknik, og skaber nye visuelle udtryk. Det uperfekte er perfekt"</p>
 
 </section>
-
- 
-
 </main>
 
- 
 
- 
-
- 
 
 <style>
-  
-  .slide-in-blurred-bottom {
-	-webkit-animation: slide-in-blurred-bottom 0.6s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
-	        animation: slide-in-blurred-bottom 0.6s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+
+  .citat_animation{
+	        animation: slide-in-blurred-bottom 5s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
 }
+
+
 
 .text-overlay {
 
@@ -83,4 +77,33 @@ import "../styles/reset.css";
 
 </style>
 
+ <script>
+
+  import { gsap } from "gsap";
+
+  import { ScrollTrigger } from "gsap/ScrollTrigger";
+
  
+
+  gsap.registerPlugin(ScrollTrigger);
+
+ 
+
+  gsap.from(".citat_animation", {
+
+    scrollTrigger: {
+
+      trigger: ".citat_animation",
+      markers: true,
+      srub: true,
+      start: "start center"
+
+    },
+
+    scale: 2,
+ 
+
+  });
+
+
+  
