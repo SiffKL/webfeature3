@@ -24,16 +24,27 @@ import "../styles/reset.css";
 
 
     .citat {
-     
+      font-size: var(--font-size-6);
+      line-height: 40px;
       position: relative;
       text-align: center;
-      max-width: 100vw;
-      overflow-x: hidden;
-      max-width: 600px;
-      top: -400px;
+      max-width: 800px;
+      top: -450px;
       z-index:1;
+      
      
     }
+
+    @media screen and (max-width: 600px) {
+ 
+  .citat {
+    max-width: 400px;
+    padding: 8%;
+    font-size: var(--font-size-4);
+      line-height: 24px;
+      top: -450px;
+  }
+}
 .videocitat {
   display: flex;
   justify-content:center;
