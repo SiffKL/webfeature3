@@ -96,4 +96,8 @@ h3 {
     padding-left: 8%;
     padding-right: 8%;
   }
+  .citat {
+    max-width: 400px;
+    padding: 8%;
+  }
 }
